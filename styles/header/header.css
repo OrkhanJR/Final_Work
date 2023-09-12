@@ -1,1 +1,7 @@
 @import url(../../styles/variables/colors.css);
+
+header {
+  background-color: red;
+  position: sticky;
+  top: 0;
+}
