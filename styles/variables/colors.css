@@ -1,5 +1,7 @@
 :root {
   --header-background-color: #222;
+  --header-text-color: #9d9d9d;
+  --header-active-background-color: #080808;
   --first-section-background-color: yellowgreen;
   --second-and-footer-section-background-color: #fff;
   --third-section-background-color: goldenrod;

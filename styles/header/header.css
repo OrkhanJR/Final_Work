@@ -1,9 +1,123 @@
 @import url(../../styles/variables/colors.css);
 
 header {
+  padding: 0 10px;
   background-color: var(--header-background-color);
   position: sticky;
   top: 0;
 }
 
+.container
+  .navigation
+  .parent
+  .menu
+  nav
+  ul
+  .dropdown
+  .dropdown-menu
+  .dropdown-link {
+  color: #262626;
+}
 
+.active a {
+  background-color: var(--header-active-background-color);
+  color: #fff !important;
+  padding: 20px;
+}
+.container .navigation {
+  display: flex;
+  margin: 0 10%;
+}
+
+.container .navigation .logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+}
+
+.container .navigation a {
+  color: var(--header-text-color);
+}
+
+.container .navigation .parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container .navigation a:hover {
+  color: white;
+}
+
+.container .navigation .parent .menu nav ul {
+  display: flex;
+  margin-left: 20px;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.container .navigation .parent .search-form form label input {
+  width: 200px;
+  height: 35px;
+  border-radius: 5px;
+  padding: 6px 12px;
+  color: #555;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.container .navigation .parent .search-form form button {
+  width: 70px;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.container .navigation .parent .search-form form button:hover {
+  background-color: #e6e6e6;
+}
+
+.container .navigation .parent .menu nav ul .dropdown {
+  position: relative;
+}
+
+.container .navigation .parent .menu nav ul .dropdown .dropdown-menu {
+  display: none;
+}
+
+.container .navigation .parent .menu nav ul .dropdown:hover .dropdown-menu {
+  display: flex;
+  gap: 0;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: -30px;
+  background-color: #fff;
+  color: #333;
+  width: 160px;
+  padding: 5px;
+}
+
+.container .navigation .parent .menu nav ul .dropdown:hover .dropdown-menu li {
+  padding: 5px;
+}
+
+.container
+  .navigation
+  .parent
+  .menu
+  nav
+  ul
+  .dropdown:hover
+  .dropdown-menu
+  > li:hover {
+  background-color: #f5f5f5;
+  color: #333;
+}
