@@ -1,7 +1,5 @@
 @import url(./styles/reset/reset.css);
 @import url(./styles/header/header.css);
-@import url(./styles/AboutPageStyles/about.css);
-@import url(./styles/ProductsPageStyles/products.css);
 @import url(./styles/footer/footer.css);
 @import url(./styles/globalStyles/global.css);
 @import url(./styles/variables/colors.css);
