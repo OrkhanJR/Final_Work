@@ -6,14 +6,18 @@ body {
 }
 
 main {
-  color: white;
-  background-color: black;
+  display: grid;
+  grid-auto-rows: 1fr;
 }
 
 header,
-main,
+section,
 footer {
   display: grid;
   grid-template-areas: ". container .";
-  grid-template-columns: 1fr 1170px 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container {
+  grid-area: container;
 }
