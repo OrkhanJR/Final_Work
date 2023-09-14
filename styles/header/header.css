@@ -46,7 +46,7 @@ nav > ul > li {
 }
 
 .container .navigation a {
-  color: var(--header-text-color);
+  color: var(--gray-text-color);
 }
 
 .container .navigation .parent {
