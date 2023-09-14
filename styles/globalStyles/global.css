@@ -4,6 +4,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   display: grid;
   min-height: 100vh;
+  min-width: 500px;
   grid-template-rows: 50px 1fr 100px;
 }
 
@@ -23,3 +24,4 @@ footer {
 .container {
   grid-area: container;
 }
+

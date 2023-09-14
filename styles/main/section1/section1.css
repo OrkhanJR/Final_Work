@@ -1,0 +1,56 @@
+@import url(../../../styles/variables/colors.css);
+
+.first-section {
+  background-color: var(--first-section-background-color);
+}
+
+.section1-parent {
+  display: flex;
+  justify-content: center;
+}
+
+.container .hero {
+  max-width: 1170px;
+  min-height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .hero h1 {
+  font-size: 62px;
+  font-weight: 500;
+}
+
+.container .hero p {
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.container .hero .hero-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: var(--first-section-text-color);
+}
+
+.section1-button {
+  cursor: pointer;
+  width: 106px;
+  min-height: 35px;
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  background-color: var(--blue-color);
+  margin-bottom: 10px;
+}
+
+.section1-button:hover {
+  background-color: #286090;
+  border-color: #204d74;
+}

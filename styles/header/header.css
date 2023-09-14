@@ -30,10 +30,12 @@ nav > ul > li {
   padding: 16px;
 }
 .container .navigation {
+  max-width: 1170px;
   height: 100%;
   display: flex;
   align-items: center;
-  margin: 0 7.5%;
+  padding-right: 10px;
+  margin: 0px 3% 0 10%;
 }
 
 .container .navigation .logo {
@@ -120,6 +122,7 @@ input:focus {
 
 .container .navigation .parent .menu nav ul .dropdown:hover .dropdown-menu {
   display: flex;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   gap: 0;
   flex-direction: column;
   position: absolute;
