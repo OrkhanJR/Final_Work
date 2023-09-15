@@ -27,7 +27,7 @@ nav > ul > li {
 .active a {
   background-color: var(--header-active-background-color);
   color: #fff !important;
-  padding: 16px;
+  padding: 15px;
 }
 .container .navigation {
   max-width: 1170px;

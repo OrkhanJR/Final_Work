@@ -16,6 +16,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .container .hero h1 {
@@ -39,7 +40,8 @@
   cursor: pointer;
   width: 106px;
   min-height: 35px;
-  padding: 6px 12px;
+  max-height: 40px;
+  padding: 3px 9px;
   border: 1px solid transparent;
   border-radius: 4px;
   font-size: 14px;
@@ -52,4 +54,10 @@
 .section1-button:hover {
   background-color: #286090;
   border-color: #204d74;
+}
+
+@media (max-width: 800px) {
+  .container .hero {
+    padding: 0 15px;
+  }
 }

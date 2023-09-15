@@ -1,0 +1,18 @@
+@import url(../../../styles/variables/colors.css);
+
+.third-section {
+    background-color: var(--third-section-background-color);
+    width: 100%;
+    height: 430px;
+}
+
+.third-section .third-container {
+    max-width: 1170px;
+    display: flex;
+}
+
+.third-section .third-container .third-parent .image-container > img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
