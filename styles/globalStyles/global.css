@@ -8,6 +8,7 @@ body {
   line-height: 1.42857143;
 }
 
+
 h1,
 h2,
 h3 {
@@ -29,14 +30,3 @@ footer {
   grid-row: 3/3;
 }
 
-/* header,
-section,
-footer {
-  display: grid;
-  grid-template-areas: ". container .";
-  grid-template-columns: 1fr 100% 1fr;
-} */
-
-/* .container {
-  grid-area: container;
-} */

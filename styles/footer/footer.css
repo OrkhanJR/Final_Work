@@ -1,6 +1,6 @@
 @import url(../../styles/variables/colors.css);
 
-footer {
+.footer-content {
   display: flex;
   justify-content: center;
 }
