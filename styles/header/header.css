@@ -29,13 +29,20 @@ nav > ul > li {
   color: #fff !important;
   padding: 15px;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .container .navigation {
   max-width: 1170px;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   padding-right: 10px;
-  margin: 0px 3% 0 10%;
+  margin: 0px 2% 0 9%;
 }
 
 .container .navigation .logo {
@@ -99,6 +106,13 @@ input:focus {
   outline: none;
 }
 
+input:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+}
+
 .container .navigation .parent .search-form form button {
   width: 70px;
   height: 35px;
@@ -120,14 +134,27 @@ input:focus {
   display: none;
 }
 
+.container .navigation .parent .menu nav ul .dropdown > a .triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
 .container .navigation .parent .menu nav ul .dropdown:hover .dropdown-menu {
   display: flex;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  gap: 0;
+  gap: 5px;
   flex-direction: column;
   position: absolute;
   top: 100%;
-  background-color: #fff;
+  left: 0;
+  background-color: white;
   color: #333;
   width: 160px;
   padding: 5px;
@@ -150,6 +177,14 @@ input:focus {
   color: #333;
 }
 
+.container .navigation .parent .menu .burger-menu {
+  display: none;
+}
+
+.container .navigation .parent .menu .burger-menu .mobile-li {
+  display: none;
+}
+
 @media (max-width: 800px) {
   nav {
     display: none;
@@ -157,5 +192,237 @@ input:focus {
 
   .search-form {
     display: none;
+  }
+
+  .container .navigation .parent {
+    width: 100%;
+  }
+
+  .container .navigation {
+    margin: 0;
+  }
+
+  .container .navigation .parent .menu {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .container .navigation .parent .menu .burger-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .container .navigation .parent .menu .burger-menu {
+    color: var(--gray-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 34px;
+    cursor: pointer;
+    border: 1px solid #333;
+    border-radius: 4px;
+  }
+
+  .container .navigation .parent .menu .burger-menu .lines {
+    background-color: var(--header-background-color);
+    width: 80%;
+    padding: 3px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .container .navigation .parent .menu .burger-menu .lines .line {
+    background-color: white;
+    height: 3px;
+    border-radius: 4px;
+  }
+
+  .container
+    .navigation
+    .parent
+    .menu
+    .burger-container:hover
+    .burger-menu
+    .mobile-li {
+    display: flex;
+    flex-direction: column;
+    border-top-color: #101010;
+    background-color: var(--header-background-color);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100vw;
+    padding-left: 30px;
+    padding-bottom: 5px;
+  }
+
+  .container
+    .navigation
+    .parent
+    .menu
+    .burger-container:hover
+    .burger-menu
+    .mobile-li
+    > ul {
+    width: 100%;
+  }
+
+  .container
+    .navigation
+    .parent
+    .menu
+    .burger-container:hover
+    .burger-menu
+    .mobile-li
+    > ul
+    > li {
+    padding: 5px 5px;
+  }
+
+  .container
+    .navigation
+    .parent
+    .menu
+    .burger-container:hover
+    .burger-menu
+    .mobile-li
+    > ul
+    > li:hover {
+    background-color: #080808;
+    color: white;
+  }
+
+  .container
+    .navigation
+    .parent
+    .menu
+    .burger-container
+    .burger-menu
+    .dropdown {
+    position: relative;
+  }
+
+  .container
+    .navigation
+    .parent
+    .menu
+    .burger-container
+    .burger-menu
+    .dropdown
+    .dropdown-menu {
+    display: none;
+  }
+
+  .container
+    .navigation
+    .parent
+    .menu
+    .burger-container
+    .burger-menu
+    .dropdown:hover
+    .dropdown-menu {
+    display: flex;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    gap: 5px;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--header-background-color);
+    color: #333;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .container
+    .navigation
+    .parent
+    .menu
+    .burger-container
+    .burger-menu
+    .dropdown
+    > a
+    .triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+  }
+
+  .container
+    .navigation
+    .parent
+    .menu
+    .burger-container
+    .burger-menu
+    .mobile-li
+    .form
+    form
+    label
+    input {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    padding: 6px 12px;
+    color: #555;
+    font-size: 14px;
+  }
+
+  .container
+    .navigation
+    .parent
+    .menu
+    .burger-container
+    .burger-menu
+    .mobile-li
+    .form
+    form
+    > button {
+    width: 70px;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  .container
+    .navigation
+    .parent
+    .menu
+    .burger-container
+    .burger-menu
+    .mobile-li
+    .form
+    form
+    > button:hover {
+    border-color: #adadad;
+    background-color: #e6e6e6;
+  }
+
+  .container
+    .navigation
+    .parent
+    .menu
+    .burger-container
+    .burger-menu
+    .mobile-li
+    .form
+    form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-right: 10px;
   }
 }

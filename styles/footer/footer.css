@@ -1,2 +1,42 @@
 @import url(../../styles/variables/colors.css);
 
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  font-size: 14px;
+  max-width: 1170px;
+  min-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  min-height: 120px;
+}
+
+.footer-container .footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-container .footer-nav > a {
+  color: var(--blue-color);
+}
+
+.footer-container .footer-nav > a:hover {
+  text-decoration: underline;
+  color: var(--dark-blue);
+}
+
+.footer-container .footer-nav >  span {
+  color: var(--gray-text-color);
+}
+
+.footer-container > p {
+  color: var(--gray-text-color);
+}

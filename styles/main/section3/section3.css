@@ -1,18 +1,67 @@
 @import url(../../../styles/variables/colors.css);
 
 .third-section {
-    background-color: var(--third-section-background-color);
-    width: 100%;
-    height: 430px;
+  background-color: var(--third-section-background-color);
+  width: 100%;
+  min-height: 430px;
+  display: flex;
+  justify-content: center;
 }
 
 .third-section .third-container {
-    max-width: 1170px;
-    display: flex;
+  max-width: 1170px;
+  display: flex;
+  padding: 15px;
+  gap: 15px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .third-section .third-container .third-parent .image-container > img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.third-section .third-container .third-parent {
+  max-width: 390px;
+  text-align: center;
+}
+
+.third-section .third-container .third-parent .title-p {
+  font-size: 14px;
+}
+
+.third-section .third-container .third-parent .title-head {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.third-section .third-container .third-parent .btn {
+  margin-top: 10px;
+  appearance: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.third-section .third-container .third-parent .btn:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+@media (max-width: 800px) {
+  .third-section .third-container {
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .third-section .third-container .third-parent {
+    max-width: 100%;
+  }
 }
